@@ -8,4 +8,4 @@ Nevertheless, I decided to offer a monetary reward in appreciation of the best c
 
 **Hypothesis:**
 
-Offering a reward for the best contributor should increase the overall effort that contributors put into following the C4 process and making things easier for others.
+Offering a reward for the contributor who best follows the C4 and other contributor guidelines should increase the overall effort that contributors put into following these processes.
