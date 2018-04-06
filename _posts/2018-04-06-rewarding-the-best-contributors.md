@@ -12,7 +12,7 @@ Offering a reward for the contributor who best follows the C4 and other contribu
 
 Evaluation:
 
-The following metrics will be taken into account:
+The following metrics will be taken into account for a before and after comparison:
 
 * Ratio of C4 compliant to non-compliant pull requests,
 * Amount of (codebase) commenting in commits,
