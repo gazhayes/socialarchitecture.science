@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/rewarding-the-best-contributors.md
 hide_body: false
 fields:
 - type: text
