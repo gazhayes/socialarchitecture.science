@@ -8,7 +8,7 @@ Nevertheless, I decided to offer a monetary reward in appreciation of the best c
 
 **Hypothesis:**
 
-Offering a reward for the contributor who best follows the C4 and other contributor guidelines should increase the overall effort that contributors put into following these processes. There is also a pretty good chance that this will cause resentment in contributors who have a generally negative disposition to start with (I can't win, the game is rigged, the world is unfair, those grapes are probably sour anyway). 
+Offering a reward for the contributor who best follows the C4 and other contributor guidelines should increase the overall effort that contributors put into following these processes. There is also a pretty good chance that this will cause resentment in contributors who have a generally negative disposition to start with (I can't win, the game is rigged, the world is unfair, those grapes are probably sour anyway).
 
 **Evaluation:**
 
@@ -23,6 +23,6 @@ The following metrics will be taken into account for a before and after comparis
 
 Method:
 
-The following was posted to the issue tracker:
+The following was [posted](https://github.com/Blockrazor/blockrazor/issues/621) to the issue tracker:
 
 ![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 10.54.22 PM.png)
