@@ -39,4 +39,16 @@ The other contributor was discouraged by this comment, so I tried to give the or
 
 At the same time, Stewart, who is using the C4 in his own project jumped in and created [this thread](https://github.com/Blockrazor/blockrazor/issues/638) to document the negative impacts of this appreciation reward:
 
-![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 11.13.28 PM.png)
+![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 11.13.28 PM.png)There were no further personal attacks after this.
+
+In the two weeks prior to the announcement of this award, 12% of pull requests had to be amended to be C4 compliant. This was reduced to 2% in the following two weeks.
+
+Commenting (of the codebase) showed marginal improvement.
+
+Instances of bad housekeeping went from happening in 36% of issues down to 2%.
+
+The number of commits adding new tests dropped off completely. 16 tests were added in the two weeks prior, 0 tests were added after. This came as a surprise.
+
+Contributor interaction is more difficult to quantify, but it has definitely trended upwards, contributors are a lot more open to helping out other contributors when they are stuck.
+
+Interpersonal conflict is something to keep an eye on, it hasn't returned since the above, but the contributor who conducted the attack is also very uninterested in the award process. This type of nihilistic world view is very difficult to integrate into a community and I think not having flame wars is probably the best we can hope for. However one negative person can poison a community like a single drop of sewage can destroy a whole bucket of drinking water, so this has to be monitored very carefully and the person will have to be removed if he causes any further pain to others.
