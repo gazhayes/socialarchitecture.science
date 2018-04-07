@@ -21,8 +21,22 @@ The following metrics will be taken into account for a before and after comparis
 * How often people help out others when they are stuck,
 * interpersonal conflict between contributors.
 
-Method:
+**Method:**
 
 The following was [posted](https://github.com/Blockrazor/blockrazor/issues/621) to the issue tracker:
 
-![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 10.54.22 PM.png)
+![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 10.54.22 PM.png)Results
+
+Initial responses were very positive. But very quickly, this happened:
+
+![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 11.01.56 PM.png)
+
+The other contributor was discouraged by this comment, so I tried to give the original commenter a way out and defuse the situation, but he was insisted on making things personal between himself and the other contributor:
+
+![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 11.06.01 PM-1.png)I gave it one more attempt to nip this silly behaviour in the bud:
+
+![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 11.09.33 PM.png)
+
+At the same time, Stewart, who is using the C4 in his own project jumped in and created [this thread](https://github.com/Blockrazor/blockrazor/issues/638) to document the negative impacts of this appreciation reward:
+
+![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 11.13.28 PM.png)
