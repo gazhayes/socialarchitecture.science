@@ -20,3 +20,9 @@ The following metrics will be taken into account for a before and after comparis
 * How often tests are written for commits,
 * How often people help out others when they are stuck,
 * interpersonal conflict between contributors.
+
+Method:
+
+The following was posted to the issue tracker:
+
+![](/uploads/2018/04/07/Screen Shot 2018-04-07 at 10.54.22 PM.png)
