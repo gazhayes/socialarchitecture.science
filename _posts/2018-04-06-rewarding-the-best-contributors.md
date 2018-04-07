@@ -18,4 +18,5 @@ The following metrics will be taken into account for a before and after comparis
 * Amount of (codebase) commenting in commits,
 * Correct housekeeping vs lazy or incorrect housekeeping (claiming issues before working on them, not claiming more than one issue at once, closing resolved issues, commenting when an issue is complete and ready to be tested),
 * How often tests are written for commits,
-* How often people help out others when they are stuck.
+* How often people help out others when they are stuck,
+* interpersonal conflict between contributors.
