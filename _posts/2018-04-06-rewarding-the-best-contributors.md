@@ -8,7 +8,7 @@ Nevertheless, I decided to offer a monetary reward in appreciation of the best c
 
 **Hypothesis:**
 
-Offering a reward for the contributor who best follows the C4 and other contributor guidelines should increase the overall effort that contributors put into following these processes.
+Offering a reward for the contributor who best follows the C4 and other contributor guidelines should increase the overall effort that contributors put into following these processes. There is also a pretty good chance that this will cause resentment in contributors who have a generally negative disposition to start with (I can't win, the game is rigged, the world is unfair, those grapes are probably sour anyway). 
 
 **Evaluation:**
 
