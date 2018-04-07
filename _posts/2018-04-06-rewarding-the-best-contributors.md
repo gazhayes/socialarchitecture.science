@@ -10,7 +10,7 @@ Nevertheless, I decided to offer a monetary reward in appreciation of the best c
 
 Offering a reward for the contributor who best follows the C4 and other contributor guidelines should increase the overall effort that contributors put into following these processes.
 
-Evaluation:
+**Evaluation:**
 
 The following metrics will be taken into account for a before and after comparison:
 
