@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/contributors-shall-not-have-commit-access-to-the-repository-unless-they-are-also-maintainers.md
 - _posts/2018-04-06-rewarding-the-best-contributors.md
 hide_body: false
 fields:
