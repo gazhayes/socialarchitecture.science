@@ -14,4 +14,4 @@ Now imagine you're a 'gatekeeper' at Monero and you want to introduce the C4 con
 
 This is why the C4 must be introduced at the _start_ of the project, before people start forming a culture and expectations based on centrally planned processes.
 
-If you want to convert an existing open source project over to the C4, you're better off forking it. Then, anyone who likes the idea can opt-in.
+If you want to convert an existing open source project over to the C4, you're better off forking it. Then, anyone who likes the idea can opt-in, and the C4 will be at the very center of the project culture.
