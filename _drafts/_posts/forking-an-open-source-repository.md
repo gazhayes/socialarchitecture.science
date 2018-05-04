@@ -1,5 +1,5 @@
 ---
-title: Converting an existing project to the C4
+title: Introducing the C4 to existing projects
 date: 2018-05-04 00:00:00 +0000
 ---
 Let's do a thought experiment. Jump into your imaginary time machine and head on over to the year 2000.
