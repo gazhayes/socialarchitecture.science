@@ -20,7 +20,9 @@ As it's practically impossible to convert an existing culture to the C4, the sim
 
 It's really quite simple: fork the repository, and change the contribution policy to the C4. You'll need at least one other person to be involved because you shouldn't be merging your own pull requests (or pushing code directly to the repository).
 
-To make it easier, you might want to write up some basic instructions in the Readme on how to send a pull request and what it should look like. Then start following the C4 yourself, to the letter. You will be the example that everyone else initially follows, your actions will be reproduced by other people and be the basis for the culture of the project. If you set off on the wrong foot, you might find yourself unable to correct the culture and be forced to fork the project again.
+To make it easier, you might want to write up some basic instructions in the Readme on how to send a pull request and what it should look like. 
+
+Then you need to start following the C4 yourself, to the letter. You will be the example that everyone else initially follows, your actions will be reproduced by other people and be the basis for the culture of the project. If you set off on the wrong foot, you might find yourself unable to correct the culture and be forced to fork the project again.
 
 ### Housekeeping
 
@@ -34,7 +36,7 @@ This is why the C4 demands that copyrights be _decentralized_. The copyrights of
 
 **How to do it:** add an AUTHORS file to the C4 fork of the project. Add your name, along with whatever the existing copyright notice is. The C4 asks that new contributors add their name to this file with their first pull request to the project. Over time, the list will grow.
 
-2. Relicense as share-alike
+1. Relicense as share-alike
 
 Owning the copyrights to your code is useless if you're just going to turn around and explicitly hand over the rights on how your code can be used or licensed. If you release your code under a BSD/MIT style license then people or companies using your code are under no obligations to share their improvements with you, in fact it's trivial to make it illegal for you to use anything they develop on top of your code.
 
