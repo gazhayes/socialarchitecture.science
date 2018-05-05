@@ -28,7 +28,7 @@ Then you need to start following the C4 yourself, to the letter. You will be the
 
 There are usually a number of changes you need to make to a repository to start effectively using the C4.
 
-1. Distribute the copyrights
+#### 1. Distribute the copyrights
 
 Most open source projects centralize the copyright protections (e.g. _copyright \[project name\]_). All contributors thus implicitly (or even explicitly in many cases) surrender all rights to their code the very second they send a pull request. This makes it a trivial exercise to buy the copyrights, fork the project, change the license unilaterally, and move off in a closed direction.
 
@@ -36,7 +36,7 @@ This is why the C4 demands that copyrights be _decentralized_. The copyrights of
 
 **How to do it:** add an AUTHORS file to the C4 fork of the project. Add your name, along with whatever the existing copyright notice is. The C4 asks that new contributors add their name to this file with their first pull request to the project. Over time, the list will grow.
 
-1. Relicense as share-alike
+#### 2. Relicense as share-alike
 
 Owning the copyrights to your code is useless if you're just going to turn around and explicitly hand over the rights on how your code can be used or licensed. If you release your code under a BSD/MIT style license then people or companies using your code are under no obligations to share their improvements with you, in fact it's trivial to make it illegal for you to use anything they develop on top of your code.
 
