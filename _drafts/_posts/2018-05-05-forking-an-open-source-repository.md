@@ -16,7 +16,7 @@ This extreme example highlights why the C4 must be introduced at the _start_ of 
 
 ### Converting existing projects to the C4
 
-As it's practically impossible to convert an existing culture to the C4, the simplest solution is to fork the project and implement the C4 on the new fork. That way, anyone who likes the idea can opt-in and those who don't like the idea are not affected.
+As it's practically impossible to convert an existing culture to the C4, the simplest solution is to implement the C4 on a new fork of the project. That way, anyone who likes the idea can opt-in and those who don't like the idea are not affected.
 
 ##### Housekeeping
 
