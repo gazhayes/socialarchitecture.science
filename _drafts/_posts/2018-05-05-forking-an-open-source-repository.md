@@ -12,7 +12,7 @@ This is not surprising however, and it's unfair to criticise people for not ente
 
 Now imagine you're a 'gatekeeper' at Monero and you want to introduce the C4 contribution protocol, which is the Wikipedia model of the software development world. There are _serious_ consequences for rocking the boat and messing things up. Things are working very well right now. Brilliant research is getting done. They are pushing the envelope in terms of privacy and security. They are coming up with quite genius solutions to blockchain bloat. Things really are working remarkably well. Would _you_ try and (truly) adopt the C4 in their position? It's easy to point fingers when it's not your head on the chopping board. I'd much rather be the CEO who sinks a large company than the vocal developer who's calls to adopt the C4 sink a cryptocurrency. With so many people having their money involved, the personal consequences for the the developers, should they be deemed responsible for anything going wrong, would be disastrous.  People would be out for blood.
 
-This is why the C4 must be introduced at the _start_ of the project, before people start forming a culture and expectations based on centrally planned processes.
+This extreme example highlights why the C4 must be introduced at the _start_ of a project with no risks on the table and before people start forming a culture and expectations based on centrally planned processes.
 
 ### Converting existing projects to the C4
 
