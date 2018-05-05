@@ -26,7 +26,7 @@ Distributed copyrights
 
 Most open source projects centralize the copyright protections (e.g. _copyright \[project name\]_). All contributors thus implicitly (or even explicitly in many cases) surrender all rights to their code the very second they send a pull request. This makes it a trivial exercise to buy the copyrights, fork the project, change the license unilaterally, and move off in a closed direction.
 
-This is why the C4 demands that copyrights be decentralized. The copyrights of C4 projects are owned by everyone who's ever submitted a line of code to the project, and you need the explicit approval of _all_ of them to be able to conduct any kind of takeover.
+This is why the C4 demands that copyrights be _decentralized_. The copyrights of C4 projects are owned by everyone who's ever submitted a line of code to the project, and you need the explicit approval of _all_ of them to be able to conduct any kind of takeover.
 
  This leaves contributors without any rights to their code and opens the codebase up to closed-source takeovers. That's completely incompatible with the decentralized nature of the C4 and is  why a _share-alike_ license must be used. 
 
