@@ -41,3 +41,7 @@ The simplest solution to this problem is to to use a _share-alike license_ that 
 **How to do it:** if the project you are forking is licensed under a BSD/MIT style license, it's very straightforward to relicense it as GPL or MPL (which are share-alike licenses. Simply replace the existing LICENSE file in the project with the new license. In a new file (e.g. LEGACY_LICENSES) add the line "Parts of this project were released under the following license and copyright:" followed by the original MIT/BSD license and copyright notice. 
 
 Amend all file headers to remove the previous license and add a line stating that the file is copyright the contributors listed in the AUTHORS file and released under the MPL (or GPL) license found in the LICENSE file. Below this, add something like "_Parts of this file were released copyright <original copyright name> under the MIT license contained in LEGACY_LICENSES_"
+
+Q: Is it legal to do this to someone else's project?
+
+A: Absolutely and unequivocally yes (for BSD/MIT style licenses).
