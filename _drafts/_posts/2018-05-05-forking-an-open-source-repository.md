@@ -18,9 +18,11 @@ This extreme example highlights why the C4 must be introduced at the _start_ of 
 
 As it's practically impossible to convert an existing culture to the C4, the simplest solution is to implement the C4 on a new fork of the project. That way, anyone who likes the idea can opt-in and those who don't like the idea are not affected.
 
-It's really quite simple: fork the repository, and change the contribution policy to the C4. To make it easier, you might want to write up some basic instructions in the Readme on how to send a pull request and what it should look like. Then start following the C4 yourself, to the letter. You'll need at least one other person to be involved because you shouldn't be merging your own pull requests (or pushing code directly to the repository).
+It's really quite simple: fork the repository, and change the contribution policy to the C4. You'll need at least one other person to be involved because you shouldn't be merging your own pull requests (or pushing code directly to the repository).
 
-##### Housekeeping
+To make it easier, you might want to write up some basic instructions in the Readme on how to send a pull request and what it should look like. Then start following the C4 yourself, to the letter. You will be the example that everyone else initially follows, your actions will be reproduced by other people and be the basis for the culture of the project. If you set off on the wrong foot, you might find yourself unable to correct the culture and be forced to fork the project again.
+
+### Housekeeping
 
 There are usually a number of changes you need to make to a repository to start effectively using the C4.
 
