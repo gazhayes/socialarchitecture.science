@@ -14,7 +14,7 @@ Now imagine you're a 'gatekeeper' at Monero and you want to introduce the C4 con
 
 This is why the C4 must be introduced at the _start_ of the project, before people start forming a culture and expectations based on centrally planned processes.
 
-#### Converting existing projects to the C4
+### Converting existing projects to the C4
 
 As it's practically impossible to convert an existing culture to the C4, the simplest solution is to fork the project and implement the C4 on the new fork. That way, anyone who likes the idea can opt-in and those who don't like the idea are not affected.
 
@@ -30,7 +30,7 @@ This is why the C4 demands that copyrights be _decentralized_. The copyrights of
 
 **How to do it:** add an AUTHORS file to the C4 fork of the project. Add your name, along with whatever the existing copyright notice is. The C4 asks that new contributors add their name to this file with their first pull request to the project. Over time, the list will grow.
 
-2. **Relicense as share-alike**
+1. **Relicense as share-alike**
 
 Owning the copyrights to your code is useless if you're just going to turn around and explicitly hand over the rights on how your code can be used or licensed. If you release your code under a BSD/MIT style license then people or companies using your code are under no obligations to share their improvements with you, in fact it's trivial to make it illegal for you to use anything they develop on top of your code.
 
