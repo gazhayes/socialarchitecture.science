@@ -48,7 +48,7 @@ The simplest solution to this problem is to to use a _share-alike license_ that 
 
 Amend all file headers to remove the previous license and add a line stating that the file is copyright the contributors listed in the AUTHORS file and released under the MPL (or GPL) license found in the LICENSE file. Below this, add something like "_Parts of this file were released copyright <original copyright name> under the MIT license contained in LEGACY_LICENSES_"
 
-**Q: Is it legal to do this to someone else's project?**
+### Q: Is it legal to do this to someone else's project?
 
 A: Absolutely and unequivocally yes (for BSD/MIT style licenses). In addition, after doing this, it becomes illegal for the original project to use any of the improvements made to your fork as that would allow people to use your code in closed source projects and prevent you from using any of their improvements.
 
