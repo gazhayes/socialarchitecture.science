@@ -14,7 +14,7 @@ Now imagine you're a 'gatekeeper' at Monero and you want to introduce the C4 con
 
 This extreme example highlights why the C4 must be introduced at the _start_ of a project with no risks on the table and before people start forming a culture and expectations based on centrally planned processes.
 
-### Converting existing projects to the C4
+### Fork the project
 
 As it's practically impossible to convert an existing culture to the C4, the simplest solution is to implement the C4 on a new fork of the project. That way, anyone who likes the idea can opt-in and those who don't like the idea are not affected.
 
