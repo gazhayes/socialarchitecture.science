@@ -20,7 +20,7 @@ As it's practically impossible to convert an existing culture to the C4, the sim
 
 It's really quite simple: fork the repository, and change the contribution policy to the C4. You'll need at least one other person to be involved because you shouldn't be merging your own pull requests (or pushing code directly to the repository).
 
-To make it easier, you might want to write up some basic instructions in the Readme on how to send a pull request and what it should look like. 
+To make it easier, you might want to write up some basic instructions in the Readme on how to send a pull request and what it should look like.
 
 Then you need to start following the C4 yourself, to the letter. You will be the example that everyone else initially follows, your actions will be reproduced by other people and be the basis for the culture of the project. If you set off on the wrong foot, you might find yourself unable to correct the culture and be forced to fork the project again.
 
@@ -48,7 +48,7 @@ The simplest solution to this problem is to to use a _share-alike license_ that 
 
 Amend all file headers to remove the previous license and add a line stating that the file is copyright the contributors listed in the AUTHORS file and released under the MPL (or GPL) license found in the LICENSE file. Below this, add something like "_Parts of this file were released copyright <original copyright name> under the MIT license contained in LEGACY_LICENSES_"
 
-Q: Is it legal to do this to someone else's project?
+**Q: Is it legal to do this to someone else's project?**
 
 A: Absolutely and unequivocally yes (for BSD/MIT style licenses). In addition, after doing this, it becomes illegal for the original project to use any of the improvements made to your fork as that would allow people to use your code in closed source projects and prevent you from using any of their improvements.
 
