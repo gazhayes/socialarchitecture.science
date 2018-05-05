@@ -28,12 +28,14 @@ Most open source projects centralize the copyright protections (e.g. _copyright 
 
 This is why the C4 demands that copyrights be _decentralized_. The copyrights of C4 projects are owned by everyone who's ever submitted a line of code to the project, and you need the explicit approval of _all_ of them to be able to conduct any kind of takeover. This is practically impossible.
 
-BSD/MIT style licenses considered evil
+**How to do it:** add an AUTHORS file to the C4 fork of the project. Add your name, along with whatever the existing copyright notice is. The C4 asks that new contributors add their name to this file with their first pull request to the project. Over time, the list will grow.
+
+**BSD/MIT style licenses considered evil**
 
 Owning the copyrights to your code is useless if you're just going to turn around and explicitly hand over the rights on how your code can be used or licensed. If you release your code under a BSD/MIT style license then people or companies using your code are under no obligations to share their improvements with you, in fact it's trivial to make it illegal for you to use anything they develop on top of your code. 
 
 It seems rather silly to write code, then invite people to fork it for use in a closed source product that directly competes with your own work. It seems even more absurd to announce that you are happy to be prohibited from using any of the improvements your competitor has made to your work. 
 
-This leaves contributors without any rights to their code and opens the codebase up to closed-source takeovers. That's completely incompatible with the decentralized nature of the C4 and is  why a _share-alike_ license must be used. 
+The simplest solution to this problem is to to use a _share-alike license_ that enforces remixability. This works hand-in-hand with the distributed copyrights  above, making it practically impossible for this enforced remixability to be removed.
 
-The C4 also demands that copyright be owned by all contributors. This decentralization of copyright ownership 
+How to do it: 
