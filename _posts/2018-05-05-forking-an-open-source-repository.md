@@ -8,7 +8,11 @@ You're tasked with ensuring Encyclopaedia Britannica's dominance over Wikipedia,
 
 There's still a year before Jimmy Wales and Larry Sanger are set to register wikipedia.org, and Britannica has substantial resources and a huge market share. They even have a brand name that's endured since 1768.
 
-How could you possibly fail when you have Britannica's resources combined with the robust foresight that only time travel can give you. Success is guaranteed, the only thing you need to do is explain to the CEO of Encyclopaedia Britannica that the way forward is to fire all the contributors (including 110 Nobel prize winners, 5 former US presidents, and 4000 expert contributors) and simply let _anyone_ edit Encyclopedia Britannica.
+How could you possibly fail when you have Britannica's resources combined with that robust foresight only time travel can provide. Success is guaranteed.
+
+ The only thing you need to do is explain to the CEO of Encyclopaedia Britannica that the way forward is to fire all the contributors (including 110 Nobel prize winners, 5 former US presidents, and 4000 expert contributors) and simply let _anyone_ edit Encyclopedia Britannica. No experts needed.
+
+***
 
 You'll have just as much trouble _today_ trying to convince the gatekeepers of existing open source projects - especially cryptocurrencies - to adopt a software development equivalent of the Wikipedia model.
 
