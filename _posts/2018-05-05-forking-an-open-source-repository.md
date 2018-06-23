@@ -16,7 +16,7 @@ How could you possibly fail when you have Britannica's resources combined with t
 
 You'll have just as much trouble _today_ trying to convince the gatekeepers of existing open source projects - especially cryptocurrencies - to adopt a software development equivalent of the Wikipedia model. Let _anyone_ edit the code? No way!
 
-This is not a surprising situation, and it's unfair to criticise people for not entering the unknown. 
+This is not a surprising situation, and it's unfair to criticise people for not entering the unknown. Adopting the Wikipedia model in an existing project is practically impossible because a leap of faith is required - only someone who's really experienced this approach first hand in one of their projects  capable of believing it can work. 
 
 Monero is one of my favourite cryptocurrencies. The  environment that Monero is being developed in is the closest I've found to the Wikipedia model, which is why I personally value it far higher than the market does. It's the most friendly and open of all cryptocurrency communities. Monero is the _closest_ any cryptocurrency has come to using the Wikipedia model - and yet it's a not even in the same galaxy.
 
