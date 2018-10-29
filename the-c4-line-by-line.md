@@ -7,13 +7,13 @@ date: 2018-05-14 16:00:00 +0000
 ---
 I was very surprised to learn that the core software which ultra-reliable high frequency trading platforms are built upon was constructed using a software development process with no leadership, no vision, no roadmaps, no planning, and no meetings.
 
-ZeroMQ is the [core that these systems are built on](https://umbrella.cisco.com/blog/2015/11/05/the-avalanche-project-when-high-frequency-trading-meets-traffic-classification/), and ZeroMQ was built with the C4. The reason Blockrazor and Krazor uses the C4 is quite simple: centralization is a blocking process which yields inaccurate results.
+ZeroMQ is the [core that these systems are built on](https://umbrella.cisco.com/blog/2015/11/05/the-avalanche-project-when-high-frequency-trading-meets-traffic-classification/), and ZeroMQ was built with the C4. The reason we use the C4 at Emurgo and Blockazor is quite simple: centralization is a blocking process which yields inaccurate results.
 
 The C4 is a hill-climbing algorithm, and an evolution of the GitHub [Fork + Pull Model](http://help.github.com/send-pull-requests/). It is an _extremely_ powerful and fully battle-tested approach to developing software, with proven results. It's probably not possible for any non-C4 project to win in the free market against a project that (properly) uses the C4. Now we get to find out if this holds true in the fierce and brutal cryptocurrency battleground.
 
 ## Language
 
-### The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
+#### The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
 
 By starting with the RFC 2119 language, the C4 text makes very clear its intention to act as a protocol rather than a randomly written set of recommendations. A protocol is a contract between parties that defines the rights and obligations of each party. These can be peers in a network or they can be strangers working in the same project.
 
