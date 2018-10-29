@@ -163,47 +163,47 @@ This is how users talk to contributors. Track your problems, so others can (mayb
 
 And because many apparent problems are illusionary, by stating the problem explicitly we give others a chance to correct our logic. "You're only using A and B a lot because function C is unreliable. Solution: make function C work properly."
 
-> Users SHALL NOT log feature requests, ideas, suggestions, or any solutions to problems that are not explicitly documented and provable.
+#### Users SHALL NOT log feature requests, ideas, suggestions, or any solutions to problems that are not explicitly documented and provable.
 
 There are several reasons for not logging ideas, suggestions, or feature requests. In our experience, these just accumulate in the issue tracker until someone deletes them. But more profoundly, when we treat all change as problem solutions, we can prioritize trivially. Either the problem is real and someone wants to solve it now, or it's not on the table. Thus, wish lists are off the table.
 
-> Thus, the release history of the project SHALL be a list of meaningful issues logged and solved.
+#### Thus, the release history of the project SHALL be a list of meaningful issues logged and solved.
 
 I'd love the GitHub issue tracker to simply list all the issues we solved in each release. Today we still have to write that by hand. If one puts the issue number in each commit, and if one uses the GitHub issue tracker, which we sadly don't yet do for ZeroMQ, this release history is easier to produce mechanically.
 
-> To work on an issue, a Contributor SHALL fork the project repository and then work on their forked repository.
+#### To work on an issue, a Contributor SHALL fork the project repository and then work on their forked repository.
 
 Here we explain the GitHub fork + pull request model so that newcomers only have to learn one process (C4) in order to contribute.
 
-> To submit a patch, a Contributor SHALL create a Platform pull request back to the project.
+#### To submit a patch, a Contributor SHALL create a Platform pull request back to the project.
 
 GitHub has made this so simple that we don't need to learn git commands to do it, for which I'm deeply grateful. Sometimes, I'll tell people who I don't particularly like that command-line git is awesome and all they need to do is learn git's internal model in detail before trying to use it on real work. When I see them several months later they look... changed.
 
-> A Contributor SHALL NOT commit changes directly to the project.
+#### A Contributor SHALL NOT commit changes directly to the project.
 
 Anyone who submits a patch is a contributor, and all contributors follow the same rules. No special privileges to the original authors, because otherwise we're not building a community, only boosting our egos.
 
-> To discuss a patch, people MAY comment on the Platform pull request, on the commit, or elsewhere.
+#### To discuss a patch, people MAY comment on the Platform pull request, on the commit, or elsewhere.
 
 Randomly distributed discussions may be confusing if you're walking up for the first time, but GitHub solves this for all current participants by sending emails to those who need to follow what's going on. We had the same experience and the same solution in Wikidot, and it works. There's no evidence that discussing in different places has any negative effect.
 
-> To accept or reject a patch, a Maintainer SHALL use the Platform interface.
+#### To accept or reject a patch, a Maintainer SHALL use the Platform interface.
 
 Working via the GitHub web user interface means pull requests are logged as issues, with workflow and discussion. I'm sure there are more complex ways to work. Complexity is easy; it's simplicity that's incredibly hard.
 
-> Maintainers SHALL NOT accept their own patches.
+#### Maintainers SHALL NOT accept their own patches.
 
 There was a rule we defined in the FFII years ago to stop people burning out: no less than two people on any project. One-person projects tend to end in tears, or at least bitter silence. We have quite a lot of data on burnout, why it happens, and how to prevent it (even cure it). I'll explore this later in the chapter, because if you work with or on open source you need to be aware of the risks. The "no merging your own patch" rule has two goals. First, if you want your project to be C4-certified, you have to get at least one other person to help. If no one wants to help you, perhaps you need to rethink your project. Second, having a control for every patch makes it much more satisfying, keeps us more focused, and stops us breaking the rules because we're in a hurry, or just feeling lazy.
 
-> Maintainers SHALL NOT make value judgments on correct patches.
+#### Maintainers SHALL NOT make value judgments on correct patches.
 
 We already said this but it's worth repeating: the role of Maintainer is not to judge a patch's substance, only its technical quality. The substantive worth of a patch only emerges over time: people use it, and like it, or they do not. And if no one is using a patch, eventually it'll annoy someone else who will remove it, and no one will complain.
 
-> Maintainers SHALL merge correct patches rapidly.
+#### Maintainers SHALL merge correct patches rapidly.
 
 There is a criteria I call _change latency_, which is the round-trip time from identifying a problem to testing a solution. The faster the better. If maintainers cannot respond to pull requests as rapidly as people expect, they're not doing their job (or they need more hands).
 
-> Maintainers MAY merge incorrect patches from other Contributors with the goals of (a) ending fruitless discussions, (b) capturing toxic patches in the historical record, (c) engaging with the Contributor on improving their patch quality.
+#### Maintainers MAY merge incorrect patches from other Contributors with the goals of (a) ending fruitless discussions, (b) capturing toxic patches in the historical record, (c) engaging with the Contributor on improving their patch quality.
 
 It turns out that accepting imperfect patches rapidly, which I call "optimistic merging", works better all-round than insisting that contributors deliver perfect work.
 
@@ -240,15 +240,15 @@ In each case, OM has a better outcome than PM.
 
 In the majority case (patches that need further work), Optimistic Merging creates the conditions for mentoring and coaching. And indeed this is what we see in ZeroMQ projects, and is one of the reasons they are such fun to work on.
 
-> The user who created an issue SHOULD close the issue after checking the patch is successful.
+#### The user who created an issue SHOULD close the issue after checking the patch is successful.
 
 When one person opens an issue, and another works on it, it's best to allow the original person to close the issue. That acts as a double-check that the issue was properly resolved.
 
-> Any Contributor who has value judgments on a patch SHOULD express these via their own patches.
+#### Any Contributor who has value judgments on a patch SHOULD express these via their own patches.
 
 In essence, the goal here is to allow users to try patches rather than to spend time arguing pros and cons. As easy as it is to make a patch, it's as easy to revert it with another patch. You might think this would lead to "patch wars", but that hasn't happened. We've had a handful of cases in libzmq where patches by one contributor were killed by another person who felt the experimentation wasn't going in the right direction. It is easier than seeking up-front consensus.
 
-> Maintainers SHOULD close user issues that are left open without action for an uncomfortable period of time.
+#### Maintainers SHOULD close user issues that are left open without action for an uncomfortable period of time.
 
 Just keep the issue tracker clean.
 
@@ -258,15 +258,15 @@ When C4 is working, we get two massive simplifications of our delivery process. 
 
 This is the process we explain in this section.
 
-> The project SHALL have one branch ("master") that always holds the latest in-progress version and SHOULD always build.
+#### The project SHALL have one branch ("master") that always holds the latest in-progress version and SHOULD always build.
 
 This is redundant because every patch always builds but it's worth restating. If the master doesn't build (and pass its tests), someone needs waking up.
 
-> The project SHALL NOT use topic branches for any reason. Personal forks MAY use topic branches.
+#### The project SHALL NOT use topic branches for any reason. Personal forks MAY use topic branches.
 
 I'll come to branches soon. In short (or "tl;dr", as they say on the webs), branches make the repository too complex and fragile, and require up-front agreement, all of which are expensive and avoidable.
 
-> To make a stable release a Maintainer shall tag the repository. Stable releases SHALL always be released from the repository master.
+#### To make a stable release a Maintainer shall tag the repository. Stable releases SHALL always be released from the repository master.
 
 ## Evolution of Public Contracts
 
@@ -274,57 +274,57 @@ By "public contracts", I mean APIs and protocols. Up until the end of 2011, libz
 
 We stopped breaking public contracts simply by banning the practice. Before then it had been "OK" (as in we did it and everyone complained bitterly, and we ignored them) to break the API or protocol so long as we changed the major version number. Sounds fine, until you get ZeroMQ v2.0, v3.0, and v4.0 all in development at the same time, and not speaking to each other.
 
-> All Public Contracts (APIs or protocols) SHALL be documented.
+#### All Public Contracts (APIs or protocols) SHALL be documented.
 
 You'd think this was a given for professional software engineers but no, it's not. So, it's a rule. You want C4 certification for your project, you make sure your public contracts are documented. No "It's specified in the code" excuses. Code is not a contract. (Yes, I intend at some point to create a C4 certification process to act as a quality indicator for open source projects.)
 
-> All Public Contracts SHOULD have space for extensibility and experimentation.
+#### All Public Contracts SHOULD have space for extensibility and experimentation.
 
 Now, the real thing is that public contracts _do change_. It's not about not changing them. It's about changing them safely. This means educating (especially protocol) designers to create that space up-front.
 
-> A patch that modifies a stable Public Contract SHOULD not break existing applications unless there is overriding consensus on the value of doing this.
+#### A patch that modifies a stable Public Contract SHOULD not break existing applications unless there is overriding consensus on the value of doing this.
 
 Sometimes the patch is fixing a bad API that no one is using. It's a freedom we need, but it should be based on consensus, not one person's dogma. However, making random changes "just because" is not good. In ZeroMQ v3.x, did we benefit from renaming ZMQ_NOBLOCK to ZMQ_DONTWAIT? Sure, it's closer to the POSIX socket recv() call, but is that worth breaking thousands of applications? No one ever reported it as an issue. To misquote Stallman: "your freedom to create an ideal world stops one inch from my application."
 
-> A patch that introduces new features SHOULD do so using new names (a new contract).
+#### A patch that introduces new features SHOULD do so using new names (a new contract).
 
 We had the experience in ZeroMQ once or twice of new features using old names (or worse, using names that were _still in use_ elsewhere). ZeroMQ v3.0 had a newly introduced "ROUTER" socket that was totally different from the existing ROUTER socket in 2.x. Dear lord, you should be face-palming, why? The reason: apparently, even smart people sometimes need regulation to stop them doing silly things.
 
-> New contracts SHOULD be marked as "draft" until they are stable and used by real users.
+#### New contracts SHOULD be marked as "draft" until they are stable and used by real users.
 >
-> Old contracts SHOULD be deprecated in a systematic fashion by marking new contracts as "draft" until they are stable, then marking the old contracts as "deprecated".
+#### Old contracts SHOULD be deprecated in a systematic fashion by marking new contracts as "draft" until they are stable, then marking the old contracts as "deprecated".
 
 This life cycle notation has the great benefit of actually telling users what is going on with a consistent direction. "Draft" means "we have introduced this and intend to make it stable if it works". It does not mean, "we have introduced this and will remove it at any time if we feel like it". One assumes that code that survives more than one patch cycle is meant to be there. "Deprecated" means "we have replaced this and intend to remove it".
 
-> Old contracts SHOULD be deprecated in a systematic fashion by marking them as "deprecated" and replacing them with new contracts as needed.
+#### Old contracts SHOULD be deprecated in a systematic fashion by marking them as "deprecated" and replacing them with new contracts as needed.
 >
-> When sufficient time has passed, old deprecated contracts SHOULD be removed.
+#### When sufficient time has passed, old deprecated contracts SHOULD be removed.
 
 In theory this gives applications time to move onto stable new contracts without risk. You can upgrade first, make sure things work, and then, over time, fix things up to remove dependencies on deprecated and legacy APIs and protocols.
 
-> Old names SHALL NOT be reused by new features.
+#### Old names SHALL NOT be reused by new features.
 
 Ah, yes, the joy when ZeroMQ v3.x renamed the top-used API functions (zmq_send\[3\] and zmq_recv\[3\]) and then recycled the old names for new methods that were utterly incompatible (and which I suspect few people actually use). You should be slapping yourself in confusion again, but really, this is what happened and I was as guilty as anyone. After all, we did change the version number! The only benefit of that experience was to get this rule.
 
 ## Project Administration
 
-> The project founders SHALL act as Administrators to manage the set of project Maintainers.
+#### The project founders SHALL act as Administrators to manage the set of project Maintainers.
 
 Someone needs to administer the project, and it makes sense that the original founders start this ball rolling.
 
-> The Administrators SHALL ensure their own succession over time by promoting the most effective Maintainers.
+#### The Administrators SHALL ensure their own succession over time by promoting the most effective Maintainers.
 
 At the same time, as founder of a project you really want to get out of the way before you become over-attached to it. Promoting the most active and consistent maintainers is good for everyone.
 
-> A new Contributor who makes correct patches, who clearly understands the project goals, and the process SHOULD be invited to become a Maintainer.
+#### A new Contributor who makes correct patches, who clearly understands the project goals, and the process SHOULD be invited to become a Maintainer.
 
 Promote your contributors rapidly, when they show they get it. Anything else is counter-productive.
 
-> Administrators SHOULD remove Maintainers who are inactive for an extended period of time, or who repeatedly fail to apply this process accurately.
+#### Administrators SHOULD remove Maintainers who are inactive for an extended period of time, or who repeatedly fail to apply this process accurately.
 
 This was Ian Barber's suggestion: we need a way to crop inactive maintainers. Originally maintainers were self-elected but that makes it hard to drop troublemakers (who are rare, but not unknown).
 
-> Administrators SHOULD block or ban "bad actors" who cause stress and pain to others in the project. This should be done after public discussion, with a chance for all parties to speak. A bad actor is someone who repeatedly ignores the rules and culture of the project, who is needlessly argumentative or hostile, or who is offensive, and who is unable to self-correct their behavior when asked to do so by others.
+#### Administrators SHOULD block or ban "bad actors" who cause stress and pain to others in the project. This should be done after public discussion, with a chance for all parties to speak. A bad actor is someone who repeatedly ignores the rules and culture of the project, who is needlessly argumentative or hostile, or who is offensive, and who is unable to self-correct their behavior when asked to do so by others.
 
 Now and then, your projects will attract people of the wrong character. You will get better at seeing these people, over time. C4 helps in two ways. One, by setting out strong rules, it discourages the chaos-seekers and bullies, who cannot tolerate others' rules. Two, it gives you the Administrator the power to ban them. I like to give such people time, to show themselves, and get their patches on the public record (a reason to merge bad patches, which of course you can remove after a suitable pause).
 
