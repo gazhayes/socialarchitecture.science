@@ -2,8 +2,7 @@
 layout: page
 title: C4 Deep Dive
 permalink: "/c4-deep/"
-published: true
-date: 2018-05-15 00:00:00 +0800
+date: 2018-05-14 16:00:00 +0000
 
 ---
 A deeper understanding of the C4
