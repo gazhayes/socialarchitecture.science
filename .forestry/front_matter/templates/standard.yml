@@ -14,7 +14,6 @@ fields:
   config:
     required: true
 pages:
-- the-c4-line-by-line.md
 - _posts/2018-04-18-zipf-s-law.md
 - _posts/2018-04-06-rewarding-the-best-contributors.md
 - _posts/2018-05-05-forking-an-open-source-repository.md
