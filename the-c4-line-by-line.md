@@ -13,7 +13,7 @@ The C4 is a hill-climbing algorithm, and an evolution of the GitHub [Fork + Pull
 
 ## Language
 
-> The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
+> > The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
 
 By starting with the RFC 2119 language, the C4 text makes very clear its intention to act as a protocol rather than a randomly written set of recommendations. A protocol is a contract between parties that defines the rights and obligations of each party. These can be peers in a network or they can be strangers working in the same project.
 
@@ -23,7 +23,7 @@ It's easy to use C4: just host your project on GitHub, get one other person to j
 
 ## Goals
 
-> C4 is meant to provide a reusable optimal collaboration model for open source software projects.
+> > C4 is meant to provide a reusable optimal collaboration model for open source software projects.
 
 The short term reason for writing C4 was to end arguments over the libzmq contribution process. The dissenters went off elsewhere. [The ZeroMQ community blossomed](https://github.com/zeromq/libzmq/graphs/contributors) smoothly and easily. Most people were surprised, but gratified. There's been no real criticisms of C4 except its branching policy, which I'll come to later as it deserves its own discussion.
 
@@ -31,57 +31,57 @@ There's a reason I'm reviewing history here: as founder of a community, you are 
 
 Making C4 reusable is therefore really important. To learn more about the best possible process, we need to get results from the widest range of projects.
 
-> It has these specific goals: To maximize the scale of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
+> > It has these specific goals: To maximize the scale of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
 
 The number one goal is size and health of the community--not technical quality, not profits, not performance, not market share. The goal is simply the number of people who contribute to the project. The science here is simple: the larger the community, the more accurate the results (The Wisdom of Crowds provides a basic introduction to the research in this field).
 
-> To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
+> > To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
 
 Perhaps the worst problem we faced in libzmq was dependence on people who could understand the code, manage GitHub branches, and make clean releases--all at the same time. It's like looking for athletes who can run marathons and sprint, swim, and also lift weights. We humans are really good at specialization. Asking us to be really good at two contradictory things reduces the number of candidates sharply, which is a Bad Thing for any project. We had this problem severely in libzmq in 2009 or so, and fixed it by splitting the role of maintainer into two: one person makes patches and another makes releases.
 
-> To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
+> > To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
 
 This is theory--not fully proven, but not falsified. The diversity of the community and the number of people who can weigh in on discussions, without fear of being criticized or dismissed, the faster and more accurately the software develops. Speed is quite subjective here. Going very fast in the wrong direction is not just useless, it's actively damaging (and we suffered a lot of that in libzmq before we switched to C4).
 
-> To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
+> > To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
 
 It's quite an interesting effect of the process: _the git master is almost always perfectly stable_. This has to do with the size of changes and their _latency_, i.e., the time between someone writing the code and someone actually using it fully. However, the healthy design learning process tends to cycle through drafts until becoming stable, and inviolable.
 
-> To reduce the internal complexity of project repositories, thus making it easier for Contributors to participate and reducing the scope for error;
+> > To reduce the internal complexity of project repositories, thus making it easier for Contributors to participate and reducing the scope for error;
 
 Curious observation: people who thrive in complex situations like to create complexity because it keeps their value high. It's the Cobra Effect (Google it). Git made branches easy and left us with the all too common syndrome of "git is easy once you understand that a git branch is just a folded five-dimensional lepton space that has a detached history with no intervening cache". Developers should not be made to feel stupid by their tools. I've seen too many top-class developers confused by repository structures to accept conventional wisdom on git branches. We'll come back to dispose of git branches shortly, dear reader.
 
-> To enforce collective ownership of the project, which increases economic incentive to Contributors and reduces the risk of hijack by hostile entities.
+> > To enforce collective ownership of the project, which increases economic incentive to Contributors and reduces the risk of hijack by hostile entities.
 
 Ultimately, we're economic creatures, and the sense that "we own this, and our work can never be used against us" makes it much easier for people to invest in an open source project like ZeroMQ. And it can't be just a feeling, it has to be real. There are a number of aspects to making collective ownership work, we'll see these one-by-one as we go through C4.
 
 ## Preliminaries
 
-> The project SHALL use the git distributed revision control system.
+> > The project SHALL use the git distributed revision control system.
 
 Git has its faults. Its command-line API is horribly inconsistent, and it has a complex, messy internal model that it shoves in your face at the slightest provocation. But despite doing its best to make its users feel stupid, git does its job really, really well. More pragmatically, I've found that if you stay away from certain areas (branches!), people learn git rapidly and don't make many mistakes. That works for me.
 
-> The project SHALL be hosted on github.com or equivalent, herein called the "Platform".
+> > The project SHALL be hosted on github.com or equivalent, herein called the "Platform".
 
 I'm sure one day some large firm will buy GitHub and break it, and another platform will rise in its place. Until then, Github serves up a near-perfect set of minimal, fast, simple tools. I've thrown hundreds of people at it, and they all stick like flies stuck in a dish of honey.
 
-> The project SHALL use the Platform issue tracker.
+> > The project SHALL use the Platform issue tracker.
 
 We made the mistake in libzmq of switching to Jira because we hadn't learned yet how to properly use the GitHub issue tracker. Jira is a great example of how to turn something useful into a complex mess because the business depends on selling more "features". But even without criticizing Jira, keeping the issue tracker on the same platform means one less UI to learn, one less login, and smooth integration between issues and patches.
 
-> The project SHOULD have clearly documented guidelines for code style.
+> > The project SHOULD have clearly documented guidelines for code style.
 
 This is a protocol plug-in: insert code style guidelines here. If you don't document the code style you use, you have no basis except prejudice to reject patches.
 
-> A "Contributor" is a person who wishes to provide a patch, being a set of commits that solve some clearly identified problem. A "Maintainer" is a person who merge patches to the project. Maintainers are not developers; their job is to enforce process.
+> > A "Contributor" is a person who wishes to provide a patch, being a set of commits that solve some clearly identified problem. A "Maintainer" is a person who merge patches to the project. Maintainers are not developers; their job is to enforce process.
 
 Now we move on to definitions of the parties, and the splitting of roles that saved us from the sin of structural dependency on rare individuals. This worked well in libzmq, but as you will see it depends on the rest of the process. C4 isn't a buffet; you will need the whole process (or something very like it), or it won't hold together.
 
-> Contributors SHALL NOT have commit access to the repository unless they are also Maintainers. Maintainers SHALL have commit access to the repository.
+> > Contributors SHALL NOT have commit access to the repository unless they are also Maintainers. Maintainers SHALL have commit access to the repository.
 
 What we wanted to avoid was people pushing their changes directly to master. This was the biggest source of trouble in libzmq historically: large masses of raw code that took months or years to fully stabilize. We eventually followed other ZeroMQ projects like PyZMQ in using pull requests. We went further, and stipulated that _all_ changes had to follow the same path. No exceptions for "special people".
 
-> Everyone, without distinction or discrimination, SHALL have an equal right to become a Contributor under the terms of this contract.
+> > Everyone, without distinction or discrimination, SHALL have an equal right to become a Contributor under the terms of this contract.
 
 We had to state this explicitly. It used to be that the libzmq maintainers would reject patches simply because they didn't like them. Now, that may sound reasonable to the author of a library (though libzmq was not written by any one person), but let's remember our goal of creating a work that is owned by as many people as possible. Saying "I don't like your patch so I'm going to reject it" is equivalent to saying, "I claim to own this and I think I'm better than you, and I don't trust you". Those are toxic messages to give to others who are thinking of becoming your co-investors.
 
@@ -89,7 +89,7 @@ I think this fight between individual expertise and collective intelligence play
 
 ## Licensing and Ownership
 
-> The project SHALL use a share-alike license such as the MPLv2, or a GPLv3 variant thereof (GPL, LGPL, AGPL).
+> > The project SHALL use a share-alike license such as the MPLv2, or a GPLv3 variant thereof (GPL, LGPL, AGPL).
 
 I've already explained how full remixability creates better scale and why MPLv2 or GPL and its variants seems the optimal contract for remixable software. If you're a large business aiming to dump code on the market, you won't want C4, but then you won't really care about community either.
 
