@@ -23,7 +23,7 @@ It's easy to use C4: just host your project on GitHub, get one other person to j
 
 ## Goals
 
-> > C4 is meant to provide a reusable optimal collaboration model for open source software projects.
+<blockquote>C4 is meant to provide a reusable optimal collaboration model for open source software projects.</blockquote>
 
 The short term reason for writing C4 was to end arguments over the libzmq contribution process. The dissenters went off elsewhere. [The ZeroMQ community blossomed](https://github.com/zeromq/libzmq/graphs/contributors) smoothly and easily. Most people were surprised, but gratified. There's been no real criticisms of C4 except its branching policy, which I'll come to later as it deserves its own discussion.
 
