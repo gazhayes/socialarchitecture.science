@@ -23,7 +23,7 @@ It's easy to use C4: just host your project on GitHub, get one other person to j
 
 ## Goals
 
-<blockquote>C4 is meant to provide a reusable optimal collaboration model for open source software projects.</blockquote>
+#### C4 is meant to provide a reusable optimal collaboration model for open source software projects.
 
 The short term reason for writing C4 was to end arguments over the libzmq contribution process. The dissenters went off elsewhere. [The ZeroMQ community blossomed](https://github.com/zeromq/libzmq/graphs/contributors) smoothly and easily. Most people were surprised, but gratified. There's been no real criticisms of C4 except its branching policy, which I'll come to later as it deserves its own discussion.
 
@@ -31,57 +31,57 @@ There's a reason I'm reviewing history here: as founder of a community, you are 
 
 Making C4 reusable is therefore really important. To learn more about the best possible process, we need to get results from the widest range of projects.
 
-> > It has these specific goals: To maximize the scale of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
+#### It has these specific goals: To maximize the scale of the community around a project, by reducing the friction for new Contributors and creating a scaled participation model with strong positive feedbacks;
 
 The number one goal is size and health of the community--not technical quality, not profits, not performance, not market share. The goal is simply the number of people who contribute to the project. The science here is simple: the larger the community, the more accurate the results (The Wisdom of Crowds provides a basic introduction to the research in this field).
 
-> > To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
+#### To relieve dependencies on key individuals by separating different skill sets so that there is a larger pool of competence in any required domain;
 
 Perhaps the worst problem we faced in libzmq was dependence on people who could understand the code, manage GitHub branches, and make clean releases--all at the same time. It's like looking for athletes who can run marathons and sprint, swim, and also lift weights. We humans are really good at specialization. Asking us to be really good at two contradictory things reduces the number of candidates sharply, which is a Bad Thing for any project. We had this problem severely in libzmq in 2009 or so, and fixed it by splitting the role of maintainer into two: one person makes patches and another makes releases.
 
-> > To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
+#### To allow the project to develop faster and more accurately, by increasing the diversity of the decision making process;
 
 This is theory--not fully proven, but not falsified. The diversity of the community and the number of people who can weigh in on discussions, without fear of being criticized or dismissed, the faster and more accurately the software develops. Speed is quite subjective here. Going very fast in the wrong direction is not just useless, it's actively damaging (and we suffered a lot of that in libzmq before we switched to C4).
 
-> > To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
+#### To support the natural life cycle of project versions from experimental through to stable, by allowing safe experimentation, rapid failure, and isolation of stable code;
 
 It's quite an interesting effect of the process: _the git master is almost always perfectly stable_. This has to do with the size of changes and their _latency_, i.e., the time between someone writing the code and someone actually using it fully. However, the healthy design learning process tends to cycle through drafts until becoming stable, and inviolable.
 
-> > To reduce the internal complexity of project repositories, thus making it easier for Contributors to participate and reducing the scope for error;
+#### To reduce the internal complexity of project repositories, thus making it easier for Contributors to participate and reducing the scope for error;
 
 Curious observation: people who thrive in complex situations like to create complexity because it keeps their value high. It's the Cobra Effect (Google it). Git made branches easy and left us with the all too common syndrome of "git is easy once you understand that a git branch is just a folded five-dimensional lepton space that has a detached history with no intervening cache". Developers should not be made to feel stupid by their tools. I've seen too many top-class developers confused by repository structures to accept conventional wisdom on git branches. We'll come back to dispose of git branches shortly, dear reader.
 
-> > To enforce collective ownership of the project, which increases economic incentive to Contributors and reduces the risk of hijack by hostile entities.
+#### To enforce collective ownership of the project, which increases economic incentive to Contributors and reduces the risk of hijack by hostile entities.
 
 Ultimately, we're economic creatures, and the sense that "we own this, and our work can never be used against us" makes it much easier for people to invest in an open source project like ZeroMQ. And it can't be just a feeling, it has to be real. There are a number of aspects to making collective ownership work, we'll see these one-by-one as we go through C4.
 
 ## Preliminaries
 
-> > The project SHALL use the git distributed revision control system.
+#### The project SHALL use the git distributed revision control system.
 
 Git has its faults. Its command-line API is horribly inconsistent, and it has a complex, messy internal model that it shoves in your face at the slightest provocation. But despite doing its best to make its users feel stupid, git does its job really, really well. More pragmatically, I've found that if you stay away from certain areas (branches!), people learn git rapidly and don't make many mistakes. That works for me.
 
-> > The project SHALL be hosted on github.com or equivalent, herein called the "Platform".
+#### The project SHALL be hosted on github.com or equivalent, herein called the "Platform".
 
 I'm sure one day some large firm will buy GitHub and break it, and another platform will rise in its place. Until then, Github serves up a near-perfect set of minimal, fast, simple tools. I've thrown hundreds of people at it, and they all stick like flies stuck in a dish of honey.
 
-> > The project SHALL use the Platform issue tracker.
+#### The project SHALL use the Platform issue tracker.
 
 We made the mistake in libzmq of switching to Jira because we hadn't learned yet how to properly use the GitHub issue tracker. Jira is a great example of how to turn something useful into a complex mess because the business depends on selling more "features". But even without criticizing Jira, keeping the issue tracker on the same platform means one less UI to learn, one less login, and smooth integration between issues and patches.
 
-> > The project SHOULD have clearly documented guidelines for code style.
+#### The project SHOULD have clearly documented guidelines for code style.
 
 This is a protocol plug-in: insert code style guidelines here. If you don't document the code style you use, you have no basis except prejudice to reject patches.
 
-> > A "Contributor" is a person who wishes to provide a patch, being a set of commits that solve some clearly identified problem. A "Maintainer" is a person who merge patches to the project. Maintainers are not developers; their job is to enforce process.
+#### A "Contributor" is a person who wishes to provide a patch, being a set of commits that solve some clearly identified problem. A "Maintainer" is a person who merge patches to the project. Maintainers are not developers; their job is to enforce process.
 
 Now we move on to definitions of the parties, and the splitting of roles that saved us from the sin of structural dependency on rare individuals. This worked well in libzmq, but as you will see it depends on the rest of the process. C4 isn't a buffet; you will need the whole process (or something very like it), or it won't hold together.
 
-> > Contributors SHALL NOT have commit access to the repository unless they are also Maintainers. Maintainers SHALL have commit access to the repository.
+#### Contributors SHALL NOT have commit access to the repository unless they are also Maintainers. Maintainers SHALL have commit access to the repository.
 
 What we wanted to avoid was people pushing their changes directly to master. This was the biggest source of trouble in libzmq historically: large masses of raw code that took months or years to fully stabilize. We eventually followed other ZeroMQ projects like PyZMQ in using pull requests. We went further, and stipulated that _all_ changes had to follow the same path. No exceptions for "special people".
 
-> > Everyone, without distinction or discrimination, SHALL have an equal right to become a Contributor under the terms of this contract.
+#### Everyone, without distinction or discrimination, SHALL have an equal right to become a Contributor under the terms of this contract.
 
 We had to state this explicitly. It used to be that the libzmq maintainers would reject patches simply because they didn't like them. Now, that may sound reasonable to the author of a library (though libzmq was not written by any one person), but let's remember our goal of creating a work that is owned by as many people as possible. Saying "I don't like your patch so I'm going to reject it" is equivalent to saying, "I claim to own this and I think I'm better than you, and I don't trust you". Those are toxic messages to give to others who are thinking of becoming your co-investors.
 
@@ -89,19 +89,19 @@ I think this fight between individual expertise and collective intelligence play
 
 ## Licensing and Ownership
 
-> >     The project SHALL use a share-alike license such as the MPLv2, or a GPLv3 variant thereof (GPL, LGPL, AGPL).
+#### The project SHALL use a share-alike license such as the MPLv2, or a GPLv3 variant thereof (GPL, LGPL, AGPL).
 
 I've already explained how full remixability creates better scale and why MPLv2 or GPL and its variants seems the optimal contract for remixable software. If you're a large business aiming to dump code on the market, you won't want C4, but then you won't really care about community either.
 
-> All contributions to the project source code ("patches") SHALL use the same license as the project.
+#### All contributions to the project source code ("patches") SHALL use the same license as the project.
 
 This removes the need for any specific license or contribution agreement for patches. You fork the MPLv2 or GPL code, you publish your remixed version on GitHub, and you or anyone else can then submit that as a patch to the original code. BSD doesn't allow this. Any work that contains BSD code may also contain unlicensed proprietary code so you need explicit action from the author of the code before you can remix it.
 
-> All patches are owned by their authors. There SHALL NOT be any copyright assignment process.
+#### All patches are owned by their authors. There SHALL NOT be any copyright assignment process.
 
 Here we come to the key reason people trust their investments in ZeroMQ: it's logistically impossible to buy the copyrights to create a closed source competitor to ZeroMQ. iMatix can't do this either. And the more people that send patches, the harder it becomes. ZeroMQ isn't just free and open today--this specific rule means it will remain so forever. Note that it's not the case in all MPLv2/GPL projects, many of which still ask for copyright transfer back to the maintainers.
 
-> Each Contributor SHALL be responsible for identifying themselves in the project Contributor list.
+#### Each Contributor SHALL be responsible for identifying themselves in the project Contributor list.
 
 In other words, the maintainers are not karma accountants. Anyone who wants credit has to claim it themselves.
 
@@ -109,37 +109,37 @@ In other words, the maintainers are not karma accountants. Anyone who wants cred
 
 In this section, we define the obligations of the contributor: specifically, what constitutes a "valid" patch, so that maintainers have rules they can use to accept or reject patches.
 
-> Maintainers and Contributors MUST have a Platform account and SHOULD use their real names or a well-known alias.
+#### Maintainers and Contributors MUST have a Platform account and SHOULD use their real names or a well-known alias.
 
 In the worst case scenario, where someone has submitted toxic code (patented, or owned by someone else), we need to be able to trace who and when, so we can remove the code. Asking for real names or a well-known alias is a theoretical strategy for reducing the risk of bogus patches. We don't know if this actually works because we haven't had the problem yet.
 
-> A patch SHOULD be a minimal and accurate answer to exactly one identified and agreed problem.
+#### A patch SHOULD be a minimal and accurate answer to exactly one identified and agreed problem.
 
 This implements the Simplicity Oriented Design process that I'll come to later in this chapter. One clear problem, one minimal solution, apply, test, repeat.
 
-> A patch MUST adhere to the code style guidelines of the project if these are defined.
+#### A patch MUST adhere to the code style guidelines of the project if these are defined.
 
 This is just sanity. I've spent time cleaning up other peoples' patches because they insisted on putting the else beside the if instead of just below as Nature intended. Consistent code is healthier.
 
-> A patch MUST adhere to the "Evolution of Public Contracts" guidelines defined below.
+#### A patch MUST adhere to the "Evolution of Public Contracts" guidelines defined below.
 
 Ah, the pain, the pain. I'm not speaking of the time at age eight when I stepped on a plank with a 4-inch nail protruding from it. That was relatively OK. I'm speaking of 2010-2011 when we had multiple parallel releases of ZeroMQ, each with different _incompatible_ APIs or wire protocols. It was an exercise in bad rules, pointlessly enforced, that still hurts us today. The rule was, "If you change the API or protocol, you SHALL create a new major version". Give me the nail through the foot; that hurt less.
 
 One of the big changes we made with C4 was simply to ban, outright, this kind of sanctioned sabotage. Amazingly, it's not even hard. We just don't allow the breaking of existing public contracts, period, unless everyone agrees, in which case no period. As Linus Torvalds famously put it on 23 December 2012, "WE DO NOT BREAK USERSPACE!"
 
-> A patch SHALL NOT include nontrivial code from other projects unless the Contributor is the original author of that code.
+#### A patch SHALL NOT include nontrivial code from other projects unless the Contributor is the original author of that code.
 
 This rule has two effects. The first is that it forces people to make minimal solutions because they cannot simply import swathes of existing code. In the cases where I've seen this happen to projects, it's always bad unless the imported code is very cleanly separated. The second is that it avoids license arguments. You write the patch, you are allowed to publish it as LGPL, and we can merge it back in. But you find a 200-line code fragment on the web, and try to paste that, we'll refuse.
 
-> A patch MUST compile cleanly and pass project self-tests on at least the principle target platform.
+#### A patch MUST compile cleanly and pass project self-tests on at least the principle target platform.
 
 For cross-platform projects, it is fair to ask that the patch works on the development box used by the contributor.
 
-> * A patch commit message MUST consist of a single short (less than 50 characters) line stating the problem ("Problem: ...") being solved, followed by a blank line and then the proposed solution ("Solution: ...").
+#### A patch commit message MUST consist of a single short (less than 50 characters) line stating the problem ("Problem: ...") being solved, followed by a blank line and then the proposed solution ("Solution: ...").
 
 This is a good format for commit messages that fits into email (the first line becomes the subject, and the rest becomes the email body).
 
-> A "Correct Patch" is one that satisfies the above requirements.
+#### A "Correct Patch" is one that satisfies the above requirements.
 
 Just in case it wasn't clear, we're back to legalese and definitions.
 
@@ -147,19 +147,19 @@ Just in case it wasn't clear, we're back to legalese and definitions.
 
 In this section, we aim to describe the actual development process, step-by-step.
 
-> Change on the project SHALL be governed by the pattern of accurately identifying problems and applying minimal, accurate solutions to these problems.
+#### Change on the project SHALL be governed by the pattern of accurately identifying problems and applying minimal, accurate solutions to these problems.
 
 This is a unapologetic ramming through of thirty years' software design experience. It's a profoundly simple approach to design: make minimal, accurate solutions to real problems, nothing more or less. In ZeroMQ, we don't have feature requests. Treating new features the same as bugs confuses some newcomers. But this process works, and not just in open source. Enunciating the problem we're trying to solve, with every single change, is key to deciding whether the change is worth making or not.
 
-> To request changes, a user SHOULD log an issue on the project Platform issue tracker.
+#### To request changes, a user SHOULD log an issue on the project Platform issue tracker.
 
 This is how users talk to contributors. Track your problems, so others can (maybe) try to solve them for you.
 
-> The user or Contributor SHOULD write the issue by describing the problem they face or observe.
+#### The user or Contributor SHOULD write the issue by describing the problem they face or observe.
 
 "Problem: we need feature X. Solution: make it" is not a good issue. "Problem: user cannot do common tasks A or B except by using a complex workaround. Solution: make feature X" is a decent explanation. Because everyone I've ever worked with has needed to learn this, it seems worth restating: document the real problem first, solution second.
 
-> The user or Contributor SHOULD seek consensus on the accuracy of their observation, and the value of solving the problem.
+#### The user or Contributor SHOULD seek consensus on the accuracy of their observation, and the value of solving the problem.
 
 And because many apparent problems are illusionary, by stating the problem explicitly we give others a chance to correct our logic. "You're only using A and B a lot because function C is unreliable. Solution: make function C work properly."
 
