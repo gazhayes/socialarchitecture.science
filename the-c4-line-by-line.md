@@ -2,7 +2,8 @@
 layout: page
 title: C4 Deep Dive
 permalink: "/c4-deep/"
-published: true
+date: 2018-05-15 00:00:00 +0800
+
 ---
 A deeper understanding of the C4
 =================================
@@ -352,4 +353,4 @@ The C4, along with this breakdown of it, was created (primarily) by the late Pie
 
 The text on this page is Copyright (c) 2007-2014 iMatix Corporation and Contributors, 2017-2018 Blockrazor and Contributors and is released under [CC-BY-SA-4](https://creativecommons.org/licenses/by/4.0/)
 
-This breakdown and description of the C4 is an excerpt from [chapter 6 of _ØMQ - The Guide_](http://zguide.zeromq.org/page:all#The-ZeroMQ-Process-C), which is maintained at [booksbyus/zguide on github](https://github.com/booksbyus/zguide/blob/master/chapter6.txt). 
+This breakdown and description of the C4 is an excerpt from [chapter 6 of _ØMQ - The Guide_](http://zguide.zeromq.org/page:all#The-ZeroMQ-Process-C), which is maintained at [booksbyus/zguide on github](https://github.com/booksbyus/zguide/blob/master/chapter6.txt).
