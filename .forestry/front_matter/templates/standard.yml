@@ -13,7 +13,7 @@ fields:
   config:
     required: true
 pages:
-- _posts/2019-07-30-decentralisation-will-kill-your-company-and-your job.md
+- _posts/decentralisation-will-kill-your-company-and-your job.md
 - _posts/2019-05-16-subverting-the-state-with-bitcoin.md
 - _posts/2018-04-06-rewarding-the-best-contributors.md
 - _posts/2018-04-09-contributors-shall-not-have-commit-access-to-the-repository-unless-they-are-also-maintainers.md
