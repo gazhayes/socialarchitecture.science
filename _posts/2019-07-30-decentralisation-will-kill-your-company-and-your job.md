@@ -3,7 +3,6 @@ title: Decentralisation will kill your company (and your job)
 date: 2019-07-30 00:00:00 +0800
 
 ---
-***
 
 ![](/uploads/2019/07/30/1*a3UYM0ud4QyGzTvqpm2m4w.png)
 
