@@ -1,5 +1,5 @@
 ---
-title: Decentralisation will kill your company (and your job)
+title: The end of centralised structures is much closer than you think
 date: 2019-07-30 00:00:00 +0800
 
 ---
