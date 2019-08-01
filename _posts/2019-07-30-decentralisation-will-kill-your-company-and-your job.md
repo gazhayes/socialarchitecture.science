@@ -6,13 +6,7 @@ date: 2019-07-30 00:00:00 +0800
 
 ![](/uploads/2019/07/30/1*a3UYM0ud4QyGzTvqpm2m4w.png)
 
-You might not have noticed the underlying trend towards decentralisation, but if you’re like most people, something occasionally bubbles forth from the deep and provides you with a glimpse into this strange new world.
-
-I’m not just talking about the deep and pervasive impact of blockchain. Kickstarter and Indiegogo along with Uber and Airbnb are semi-centralised business models which hint at the raw power of the peer to peer economy. The most accurate and up to date encyclopaedia on the planet is one that anyone can edit at any time, without central management getting in the way.
-
-Stable employment is a thing of the past; millions of people are choosing to work on a freelance basis, temporarily organising around projects and ideas instead of companies and mission statements. More than [one in three Americans freelanced in 2018](https://fu-web-prod-media.s3.amazonaws.com/content/filer_public/f1/20/f1206c69-0027-4f08-a79a-6877cb90e88a/freelancinginamericareport-2018.pdf), and t[he majority of the US workforce is set to be working freelance by 2030](https://www.forbes.com/sites/elainepofeldt/2017/10/17/are-we-ready-for-a-workforce-that-is-50-freelance/#610136fe3f82).
-
-None of this is a coincidence or a short-term trend. There are deep and powerful forces of economics and nature driving the world in this direction. 
+Competition drives us to do things faster, better, cheaper. In the world we are entering, faster, cheaper, better will become synonymous with "less centralised".
 
 **Cost gravity** is the endless fall to free. Technology itself becomes more decentralised over time simply because there are so many more devices. What was once only affordable by emperors becomes a child’s toy. As the cost of chips (and the cost of connections between them) arcs towards zero along an exponential curve, we see a corresponding increase in scale and distribution.
 
@@ -26,6 +20,13 @@ The **Pareto distribution** and **equivalency principle** combine to tell us tha
 
 ***
 
+You might not have noticed the underlying trend towards decentralisation, but if you’re like most people, something occasionally bubbles forth from the deep and provides you with a glimpse into this strange new world.
+
+I’m not just talking about the deep and pervasive impact of blockchain. Kickstarter and Indiegogo along with Uber and Airbnb are semi-centralised business models which hint at the raw power of the peer to peer economy. The most accurate and up to date encyclopaedia on the planet is one that anyone can edit at any time, without central management getting in the way.
+
+Stable employment is a thing of the past; millions of people are choosing to work on a freelance basis, temporarily organising around projects and ideas instead of companies and mission statements. More than [one in three Americans freelanced in 2018](https://fu-web-prod-media.s3.amazonaws.com/content/filer_public/f1/20/f1206c69-0027-4f08-a79a-6877cb90e88a/freelancinginamericareport-2018.pdf), and t[he majority of the US workforce is set to be working freelance by 2030](https://www.forbes.com/sites/elainepofeldt/2017/10/17/are-we-ready-for-a-workforce-that-is-50-freelance/#610136fe3f82).
+
+None of this is a coincidence or a short-term trend. There are deep and powerful forces of economics and nature driving the world in this direction. 
 ### Cost Gravity
 
 The first and most important underlying force driving us towards a decentralised future is called _cost gravity_.
