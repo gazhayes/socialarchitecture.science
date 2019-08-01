@@ -1,5 +1,5 @@
 ---
-title: The end of centralised structures is much closer than you think
+title: How Amdahl's Law Will Eat Your Job
 date: 2019-07-30 00:00:00 +0800
 
 ---
