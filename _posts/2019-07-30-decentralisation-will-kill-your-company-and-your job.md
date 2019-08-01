@@ -8,9 +8,9 @@ date: 2019-07-30 00:00:00 +0800
 
 Competition drives us to do things faster, better, cheaper. In the world we are entering, faster, cheaper, better will become synonymous with "less centralised".
 
-**Cost gravity** is the endless fall to free. Technology itself becomes more decentralised over time simply because there are so many more devices. What was once only affordable by emperors becomes a child’s toy. As the cost of chips (and the cost of connections between them) arcs towards zero along an exponential curve, we see a corresponding increase in scale and distribution.
+**Cost gravity** is the endless fall to free. Technology itself becomes more decentralised over time simply because there are so many more devices. As the cost of chips (and the connections between them) arcs towards zero, we see a corresponding increase in scale and distribution.
 
-**Conway’s Law** is an observation among engineers that the way we _organise_ itself is directly proportional to the _shape_ of the systems we build. The most economically efficient way of building decentralised software to take advantage of the exponential increase in chips and connections is to have an _equally_ decentralised team. Free markets wipe out any structures that don’t keep up.
+**Conway’s Law** is an observation among engineers that the way we _organise_ is directly proportional to the _shape_ of the systems we build. The most economically efficient way of building decentralised software to take advantage of the exponential increase in chips and connections is to have an _equally_ decentralised team. Free markets wipe out any structures that don’t keep up.
 
 **Amdahl’s Law** tells us that organisational structures scale in _direct proportion_ to decentralization. The economic pressure on organisational structures to become decentralised will continue to increase until the only systems capable of surviving the free market will be those which can operate without _any_ level of central control. There is simply no room left for any kind of upfront consensus before solving a problem.
 
